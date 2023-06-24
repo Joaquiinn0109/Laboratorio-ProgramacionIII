@@ -11,13 +11,25 @@ namespace AccesoADatosConRepoDb.Business
         {
             _dataAccessRepoDbRepository = new RepoDbRepository();
         }
-        public List<Movie> GetAll()
+        public List<Movie> TraerTodasLasPeliculas()
         {
-            return (List<Movie>)_dataAccessRepoDbRepository.GetAll();
+            return _dataAccessRepoDbRepository.TrearTodasLasPeliculas();
         }
-        //public List<Movie> Search(string textToSearch)
-        //{
-        //    return _dataAccessRepoDbRepository.Search(textToSearch);
-        //}
+        public void Agregar(int num)
+        {
+            _dataAccessRepoDbRepository.AgregarPeliculas(num);
+        }
+        public void Editar()
+        {
+            _dataAccessRepoDbRepository.EditarPeliculas();
+        }
+        public List<Movie> Busqueda(string textToSearch)
+        {
+            return _dataAccessRepoDbRepository.Busqueda(textToSearch);
+        }
+        public void Eliminar()
+        {
+            _dataAccessRepoDbRepository.Eliminar();
+        }
     }
 }
