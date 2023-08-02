@@ -40,7 +40,7 @@ if (opcion == 1 || opcion == 2 || opcion == 3 || opcion == 4 || opcion == 5)
             break;
         case 5:
             Console.WriteLine("\n Usted selecionó la opcion de Eliminar las peliculas.");
-            Console.WriteLine("\n ----- ADVERTENCIA -----\n Las peliculas se eliminar de forma permanente.\n Esta seguro que desea eliminarlas?\n");
+            Console.WriteLine("\n ----- ADVERTENCIA -----\n Las peliculas se eliminaran de forma permanente.\n Esta seguro que desea eliminarlas?\n");
             Console.WriteLine("Si es asi precione 1.\n");
             var elecion = Convert.ToInt32(Console.ReadLine());
             if(elecion == 1)
